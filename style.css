@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding: 1em 0;
+}
+
+/*media*/
+iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+img, video{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*layout*/
+.container{
+    max-width: 95vw;
+    margin: 0 auto;
+}
+.videoer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+.videoer div{
+    padding: 20px;
+}
+.html5video{
+    background-color: pink;
+}
+.embedvideo{
+    background-color: orange;
+} 
+
+@media screen and (min-width: 1000px){
+    .container{
+        max-width: 60em;
+        margin: 0 auto;
+    }
+    .videoer{  
+        grid-template-columns: 29em 29em;
+    }
+
+    .html5video{
+        grid-column: 1 / span 1;
+    }
+    .embedvideo{
+        grid-column: 2 / span 1;
+    } 
+}
+
+
+
+
